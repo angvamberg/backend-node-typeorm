@@ -1,4 +1,5 @@
 import { createConnection, getConnectionOptions, Connection } from 'typeorm';
+import 'reflect-metadata';
 
 export default async (name = 'default'): Promise<Connection> => {
   const defaultOptions = await getConnectionOptions();
